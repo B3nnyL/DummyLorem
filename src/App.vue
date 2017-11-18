@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.jpg" width= "250px">
-    <HelloWorld/>
     <Book/>
   </div>
 </template>
