@@ -1,6 +1,22 @@
-# zhongnanshanxiahamadong
+# 终南山下蛤蟆洞
 
-> A Vue.js project
+> 中文占位符
+
+##秘籍目录
+- 九阴真经
+
+##功能
+
+- 段落复制
+- 列表复制
+- 自定义字数段落复制
+
+##Todo
+[-]字数增加
+[-]preloader
+[-]更多秘籍
+
+
 
 ## Build Setup
 
