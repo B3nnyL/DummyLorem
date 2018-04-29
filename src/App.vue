@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Book from './components/Book'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
     Book
   }
 }
