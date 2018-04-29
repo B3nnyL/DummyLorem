@@ -1,22 +1,16 @@
-# 终南山下蛤蟆洞
+# Dummy Lorem
 
-> 中文占位符
+> A simple text placeholder tool built with Vue.js
+> [Demo](https://dummylorem-d2f9a.firebaseapp.com/)
+> For Chinese version, please visit [终南山下蛤蟆洞](https://github.com/WandAssembly/zhongnanshanxiahamadong)
 
-## 秘籍目录
-- 九阴真经
+## Support
 
-## 功能
-
-- 段落复制
-- 列表复制
-- 自定义字数段落复制
-
-## Todo
--[] 字数增加
--[] preloader
--[] 更多秘籍
-
-
+- Paragraph output
+- List output
+- Text fragment output
+- Define counts of outputs
+- Copy outputs to clipboard
 
 ## Build Setup
 
@@ -39,5 +33,3 @@ npm run unit
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
