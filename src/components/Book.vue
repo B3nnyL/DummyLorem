@@ -71,7 +71,7 @@ export default {
     }
   },
   created: function () {
-    this.displaying = ''
+    this.displaying = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque purus semper eget duis at tellus at. Lectus sit amet est placerat. Vitae turpis massa sed elementum tempus egestas. Nisi porta lorem mollis aliquam. Enim eu turpis egestas pretium aenean pharetra. Molestie nunc non blandit massa enim. Id ornare arcu odio ut sem nulla pharetra diam sit. Accumsan tortor posuere ac ut. Sit amet purus gravida quis. Sed felis eget velit aliquet sagittis id consectetur. Vitae auctor eu augue ut lectus arcu bibendum at varius. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.'
   },
   methods: {
     updateClipbpard: function (updated) {
@@ -79,11 +79,12 @@ export default {
       this.displaying = updated
     },
     copyContent: function () {
-      var textarea = document.createElement('textarea')
+      let textarea = document.createElement('textarea')
       textarea.textContent = this.displaying
       textarea.style.position = 'fixed'
       document.body.appendChild(textarea)
       textarea.select()
+      console.log(textarea.textContent)
       try {
         return document.execCommand('copy')
       } catch (ex) {

@@ -1,9 +1,6 @@
 <template>
   <div class="list-text">
-    <ul>
-      <li v-for="item in list" :key="item.index">
-        {{item}}
-      </li>
+    <template v-for="line in list.split('\n')"> {{line}}<br></template>
     </ul>
   </div>
 </template>
@@ -19,10 +16,11 @@
     },
     computed: {
       list: function () {
-        var tmp = []
-        for (var i = 0; i < this.listCount; i++) {
-          tmp.push('- ' + this.content.split('.')[i] + '\n')
+        var tmp = ''
+        for (var i = 0; i < this.listCount - 1; i++) {
+          tmp = tmp.concat(tmp, '🥑' + this.content.split('.')[i] + '\n')
         }
+        console.log(tmp)
         return tmp
       }
     },
