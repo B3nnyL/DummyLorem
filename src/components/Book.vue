@@ -7,18 +7,18 @@
         <form>
           <div class="row form-row">
             <input type="radio" name="group" id="paragraph"  @change="chooseDisplay('para')" checked>
-            <label for="paragraph">Paragraph</label>
+            <label for="paragraph">Paragraph (default: 1 paragraph)</label>
           </div>
           <div class="row form-row">
             <input type="radio" name="group" id="list" value="list" @change="chooseDisplay('list')">
-            <label for="list">List (default: 3 items)</label>
+            <label for="list">List (default: 1 item)</label>
           </div>
           <div class="row form-row">
             <input type="radio" name="group" id="wordCount" value="wordCount" @change="chooseDisplay('count')">
             <label for="wordCount"> Word Count (1 to 411)</label>
           </div>
           <div class="row form-row">
-            <label for="count">{{labelCount}}</label>
+            <label class="countLbl" for="count">{{labelCount}}</label>
             <input type="text" id="count" v-model.number="count" placeholder="Input count">  
           </div>
         </form>

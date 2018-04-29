@@ -38,15 +38,10 @@
     watch: {
       'paragraphs': function (oldVal, newVal) {
         this.$emit('updated', this.paragraphs)
-        // console.log(this.$emit('updated', this.list))
-        // console.log('alert' + oldVal + newVal)
       }
     }
   }
 </script>
 <style>
-  .lines {
-    text-align: left;
-  }
-
+ 
 </style>
